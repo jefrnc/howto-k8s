@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+ kind: ReplicaSet
+ metadata:
+   name: custom-app-rs
+ spec:
+   replicas: 3
+   selector:
+     matchLabels:
+       app: custom-app-rs
+   template:
+     metadata:
+       labels:
+         app: custom-app-rs
+         environment: dev
+     spec:
+       containers:
+       - name: custom-app-rs
+         image: python:3.6-alpine
+         command: ['sh', '-c', 'echo running > index.html && python -m http.server 8080']
+         ports:
+         - containerPort: 8080

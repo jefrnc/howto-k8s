@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-test1
+  labels:
+    app: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend
+      lab: my-first-service
+  template:
+    metadata:
+      labels:
+        app: backend
+        lab: my-first-service
+    spec:
+      containers:
+      - name: web-container
+        image: python:3.6-alpine
+        command: ['sh', '-c', 'echo Estoy corriendo en el nodo $MY_NODE_NAME, mi nombre es $MY_POD_NAME y me dieron la ip $MY_POD_IP > index.html && python -m http.server 8080']
+        env:
+          - name: MY_NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: MY_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  labels:
+    app: backend
+    lab: my-first-service
+spec:
+  # Expose the service on a static port on each node
+  # so that we can access the service from outside the cluster 
+  type: NodePort
+  # When the node receives a request on the static port (30163)
+  # "select pods with the label 'app' set to 'echo-hostname'"
+  # and forward the request to one of them
+  selector:
+    app: backend
+    lab: my-first-service
+  ports:
+    - protocol: TCP
+    # Three types of ports for a service
+      nodePort: 30163 # nodePort - a static port assigned on each the node
+      port: 8080 # port - port exposed internally in the cluster
+      targetPort: 8080 # targetPort - the container port to send requests to

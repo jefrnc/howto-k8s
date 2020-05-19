@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod4
+  labels:
+    application-ID: my-app #El id de Aplicacion
+    Application-name: my-app #El nombre de la Aplicacion
+    version: version-nr #Numero de version
+    stage: dev #Stage a que corresponde: Dev, staging, QA, Canary, Production
+    release: release-nr # El numero de release 
+    owner: team-kube #Los dueños de este pod
+    tier: front-end # Tipo de capa expuesta por el pod front-end/back-end
+spec:
+  containers:
+  - name: my-container4
+    image: nginx:alpine

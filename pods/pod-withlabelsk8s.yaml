@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod5
+  labels:
+    app.kubernetes.io/name: my-pod5
+    app.kubernetes.io/instance: Auth-1a
+    app.kubernetes.io/version: "2.0.1"
+    app.kubernetes.io/component: Auth
+    app.kubernetes.io/part-of: my-app
+    app.kubernetes.io/managed-by: helm
+spec:
+  containers:
+  - name: my-container5
+    image: nginx:alpine

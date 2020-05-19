@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-test
+  labels:
+    app: rs-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      application-ID: my-pod6 #El replicaSet tiene que hacer match con los label del pod sino no puede replicarlo.
+      stage: dev
+      version: version-2.0
+  template:
+    metadata:
+      labels:
+        application-ID: my-pod6 #El id de Aplicacion
+        Application-name: my-app6 #El nombre de la Aplicacion
+        version: version-2.0 #Numero de version
+        stage: dev #Stage a que corresponde: Dev, staging, QA, Canary, Production
+    spec:
+      containers:
+      - name: my-container
+        image: python:3.7-alpine
+        command: ['sh', '-c', 'echo my-container-with-rs > index.html && python -m http.server 8082']

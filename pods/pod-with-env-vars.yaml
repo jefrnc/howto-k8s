@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod-with-env-vars
+spec:
+  containers:
+  - name: envar-demo-container
+    image: python:3.6-alpine
+    command: ['sh', '-c', 'echo el valor de var1 = $VAR1 y var2 = $VAR2 > index.html && python -m http.server 8080']
+    env:
+    - name: VAR1
+      value: "valor de prueba 1"
+    - name: VAR2
+      value: "estamos probando esto"
+ 

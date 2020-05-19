@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: containers-test-limitrange
+  namespace: prod
+  labels:
+    app: backend
+    env: dev
+spec:
+  containers:
+  - name: containers-test-limitrange
+    image: nginx:alpine
+    resources:
+      limits:
+        memory: 100M
+        cpu: 100m

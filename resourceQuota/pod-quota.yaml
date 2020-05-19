@@ -1,0 +1,40 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: qa
+  labels:
+    name: qa
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: pod-demo
+  namespace: qa
+spec:
+  hard:
+    pods: "3"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: qa
+  name: deployment-qa
+  labels:
+    app: front
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:alpine
+
+
+        

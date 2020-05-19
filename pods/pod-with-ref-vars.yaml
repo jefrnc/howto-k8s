@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod-with-ref-vars
+spec:
+  containers:
+    - name: envar-demo-container
+      image: python:3.6-alpine
+      command: ['sh', '-c', 'echo Estoy corriendo en el nodo $MY_NODE_NAME, mi nombre es $MY_POD_NAME y me dieron la ip $MY_POD_IP > index.html && python -m http.server 8080']
+      env:
+        - name: MY_NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        - name: MY_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: MY_POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
