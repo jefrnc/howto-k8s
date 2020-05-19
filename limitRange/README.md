@@ -1,16 +1,12 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/josephefranco)
 
-# Introduccion al Limit Range
+# Introducción al Limit Range
 
 Resumen
 
-- [ ] TBD
-- [ ] Revision de esta guia (esto se escribio de forma rapida, mientras aprendia la plataforma con lo cual pueden existir correcciones o mejoras. No dudes de hacerme un PR para ir mejorando el contenido)
-
- 
 ## Introduccion
 
-Son las mismas restricciones que nos permite los limit/request pero a nivel de namespace.
+Son las mismas restricciones que nos permite los limit/request pero a nivel de namespace. Podes revisar el apartado de Limit/Request desde [aquí](../limits-request/README.md).
 Por ejemplo seteamos en el ns de prod que el max de memoria es de 1Gi y CPU 1; y min 100M/100m.
 
 
@@ -22,6 +18,7 @@ Por ejemplo seteamos en el ns de prod que el max de memoria es de 1Gi y CPU 1; y
       memory: 100M
       cpu: 100m
 ```
+
 En el mismo manifiesto vamos a intentar crear un Pod con 50m/50m.
 
 ```
