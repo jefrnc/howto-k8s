@@ -260,10 +260,10 @@ Si te gusta mi contenido y quieres ayudarme a mantener mi entusiasmo y motivaci�
 No te preocupes si no puedes hacer una donación, mi contenido siempre será gratuito y disponible para todos. Pero si quieres apoyarme, aquí te dejo algunas opciones para hacer una donación:
 
 - [MercadoPago](https://mpago.la/2Bkj3aR)
-- Criptomonedas: Puedes hacer una donación en criptomonedas a través de mi billetera de Binance.
+- Criptomonedas: Puedes hacer una donación en criptomonedas a través de mi billetera de Binance. Si no tenes Binance, podes crearte una cuenta desde aqui https://accounts.binance.com/register?ref=CKPN0JOY
 
 Agradezco cualquier donación que puedas hacer, ¡y espero que disfrutes de mi contenido!
 
 
 ---
-⌨️ con ❤️ por [jose-franco](https://github.com/jefrnc) 😊
+⌨️ con ❤️ por [jefrnc](https://github.com/jefrnc) 😊
