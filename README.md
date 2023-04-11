@@ -250,16 +250,20 @@ https://www.udemy.com/course/kubernetes-para-desarrolladores/
 Por favor lee el [CONTRIBUTING.md]([CONTRIBUTING.md) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
  
-
 ## Licencia 📄
 
 Mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-## Expresiones de Gratitud 🎁
+##  Invítame un café ☕
+Si te gusta mi contenido y quieres ayudarme a mantener mi entusiasmo y motivación, puedes invitarme un café ☕️ como muestra de agradecimiento.
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+No te preocupes si no puedes hacer una donación, mi contenido siempre será gratuito y disponible para todos. Pero si quieres apoyarme, aquí te dejo algunas opciones para hacer una donación:
+
+- [MercadoPago](https://mpago.la/2Bkj3aR)
+- Criptomonedas: Puedes hacer una donación en criptomonedas a través de mi billetera de Binance.
+
+Agradezco cualquier donación que puedas hacer, ¡y espero que disfrutes de mi contenido!
+
 
 ---
-⌨️ con ❤️ por [jose-franco](https://github.com/jose-franco) 😊
+⌨️ con ❤️ por [jose-franco](https://github.com/jefrnc) 😊
