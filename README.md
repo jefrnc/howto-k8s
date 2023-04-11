@@ -57,48 +57,51 @@ Entra a esta practica haciendo [click aqui](service/README.md)
 
 ---
 ### El uso de namespaces
-Entra a esta practica haciendo [click aqui](namespaces/README.md)
+
+Los namespaces son una forma de dividir un cluster de Kubernetes en múltiples grupos virtuales. En esta sección se explica cómo funcionan y cómo utilizarlos. 
+[Haz clic aquí para acceder.](namespaces/README.md)
 
 ---
 ### Limitar Ram y CPU
 
-La idea es limitar un pod que no pueda usar mas de X cantidad de Ram o CPU, la idea es que el nodo no supere la cantidad de recursos disponibles ya que ellos podrian hacer caer el nodo.
-
-Entra a esta practica haciendo [click aqui](limits-request/README.md)
+Se muestra cómo limitar el uso de recursos (RAM y CPU) de un Pod en Kubernetes para evitar que consuma más recursos de los necesarios y afecte el rendimiento del cluster. 
+[Haz clic aquí para acceder.](limits-request/README.md)
 
 ---
 ### El uso de LimitRange
  
-Aplicar politica a pods que no tengan limit/request a un Namespace .
-Tambien podemos definir max o minimos a nivel de Namespace.
-
+Se muestra cómo aplicar políticas de límites de recursos (CPU y memoria) en Pods que no tienen límites establecidos en un Namespace. También se cubren temas como la definición de límites máximos o mínimos a nivel de Namespace.
 Entra a esta practica haciendo [click aqui](limitRange/README.md)
+
 ---
 ### El uso de Resource Quota
  
+Se explica cómo utilizar los Resource Quotas en Kubernetes para establecer límites en los recursos que se pueden consumir en un Namespace. Se comparan los Resource Quotas con los LimitRange y se explica por qué ambos son útiles.
+
 Limite Range | Resource Quota
 ------------ | -------------
 Las politicas aplica a nivel de Pod, por lo cual si pongo que los limites de CPU son 1Cpu, al tener por ejemplo 5 pods corriendo podria estar en una carga de 5cpu para ese nodo. Es ideal para politicas de Pods, pero por ejemplo si tenemos replicas vemos impactada la carga en el nodo ya que las policitas aplico a la unidad del Pod. | No actua a nivel de objeto, sino a nivel de Namespace. Especifica por ejemplo maximo 3cpu por Namespace, quiere decir que la sumatoria de toda los cpu o memoria de los pods que se encuentra en ese namespace no puede seperar los limites establecido por el resource quota.
 
 Por lo que se ve viene a complementar las politicas que se definieron a limite range.
-
-
 Entra a esta practica haciendo [click aqui](resourceQuota/README.md)
 
 ---
 ### El uso de Probes
  
-Como k8s sabe que un pod esta listo para funcionar? y que continua funcionando bien? Bueno entra a esta practica haciendo [click aqui](resourceQuota/README.md).
+Se explican los diferentes tipos de sondas (probes) disponibles en Kubernetes y cómo utilizarlas para verificar si un Pod está listo para recibir tráfico o si está en un estado de falla.
+[click aqui](resourceQuota/README.md).
 
 ---
 ### configMaps
  
-Bueno entra a esta practica haciendo [click aqui](configmaps/README.md).
+En esta sección se explican los ConfigMaps, una forma de almacenar datos de configuración de aplicaciones en Kubernetes. Se muestra cómo crear y utilizar ConfigMaps en un Pod.
+[click aqui](configmaps/README.md).
 
 ---
 ### secrets
  
-Bueno entra a esta practica haciendo [click aqui](secrets/README.md).
+En esta sección se explican los Secretos, que son objetos de Kubernetes utilizados para almacenar información sensible, como contraseñas, tokens de acceso y certificados. Se muestra cómo crear y utilizar Secretos en un Pod.
+[click aqui](secrets/README.md).
 
 ---
 ### Network Policies
