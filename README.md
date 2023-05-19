@@ -254,16 +254,20 @@ Por favor lee el [CONTRIBUTING.md]([CONTRIBUTING.md) para detalles de nuestro c�
 
 Mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-##  Invítame un café ☕
-Si te gusta mi contenido y quieres ayudarme a mantener mi entusiasmo y motivación, puedes invitarme un café ☕️ como muestra de agradecimiento.
+##  Buy me a coffee ☕
+If you enjoy my content and would like to support me and keep my enthusiasm and motivation going, you can buy me a coffee ☕️ as a token of appreciation.
 
-No te preocupes si no puedes hacer una donación, mi contenido siempre será gratuito y disponible para todos. Pero si quieres apoyarme, aquí te dejo algunas opciones para hacer una donación:
+Don't worry if you're unable to make a donation; my content will always be free and available to everyone. However, if you'd like to support me in other ways, here are a few options:
 
+- Follow my GitHub profile: You can show your support by following my GitHub profile. It would mean a lot to me and help me reach a wider audience.
+- Star this repository: If you find this repository useful, consider giving it a star. It helps others discover the repository and encourages me to continue creating helpful content.
+- Even these small gestures of support go a long way, and I truly appreciate them!
+
+Donations:
 - [MercadoPago](https://mpago.la/2Bkj3aR)
-- Criptomonedas: Puedes hacer una donación en criptomonedas a través de mi billetera de Binance. Si no tenes Binance, podes crearte una cuenta desde aqui https://accounts.binance.com/register?ref=CKPN0JOY
+- Cryptocurrencies: You can make a donation in cryptocurrencies through my Binance wallet. If you don't have a Binance account, you can create one https://accounts.binance.com/register?ref=CKPN0JOY. Binance Pay ID `223466477` or Binance User `Josfranco`.
 
-Agradezco cualquier donación que puedas hacer, ¡y espero que disfrutes de mi contenido!
-
+I appreciate any donation you can make, and I hope you enjoy my content!
 
 ---
-⌨️ con ❤️ por [jefrnc](https://github.com/jefrnc) 😊
+⌨️ with ❤️ by [jefrnc](https://github.com/jefrnc) 😊
